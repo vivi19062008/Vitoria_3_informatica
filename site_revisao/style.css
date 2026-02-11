@@ -60,4 +60,6 @@ body{
     flex-wrap: wrap;
 }
 
-
+.text-video{
+    align-items: center;
+}
