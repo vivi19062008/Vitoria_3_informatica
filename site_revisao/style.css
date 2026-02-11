@@ -49,8 +49,14 @@ body{
     display: flex;
 }
 
-
-
 .block_1{
-    align-items: end;
+    background-image: url(imagens/pessoa-computador.png);
+    color: rgb(43, 40, 40);
 }
+
+.container-1{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
