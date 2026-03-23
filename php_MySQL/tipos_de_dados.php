@@ -81,6 +81,18 @@ $cores = ["verde" , "azul" , "preto"];
 foreach ($cores as $cores) {
     echo "<br>" . $cores;
 }
+?>
+
+<?php
+function rolarDado($lados = 180) {
+    return rand(1, $lados);
+}
+
+// Exemplo de uso:
+echo "Dado de 6 lados: " . rolarDado() . "<br>";
+echo "Dado de 20 lados (RPG): " . rolarDado(20);
+?>
+
 
 
 

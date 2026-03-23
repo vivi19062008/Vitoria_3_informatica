@@ -96,3 +96,34 @@ switch ($diaSemana){
 
 echo "<br>_______________________________________________";
 echo "<br>";
+
+$contador = 1;
+
+while ($contador <= 10){
+    echo "contador: " , $contador;
+    $contador++;
+}
+
+echo "<br>";
+for ($i = 0; $i <= 10; $i++){
+    echo "valor: " , $i;
+}
+echo "<br>";
+
+$cores = ["vermelho" , "azul" , "verde"];
+
+foreach ($cores as $cor){
+    echo "cor: $cor<br>";
+}
+echo "==============================================================<br>";
+$nome = vitoria;
+if ($nome == "Vitoria"){
+    echo "bem vindo $nome";
+
+    $saldo_inicial = 18000;
+
+    if( $saldo_inicial >= 18000){
+        echo "esse é seu saldo<br>";
+    }
+
+
