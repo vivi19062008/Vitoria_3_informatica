@@ -119,5 +119,19 @@ echo str_replace("jogos", "trinta", $finalDeSemana);
 
 echo "<br>";
 echo "6) ";
-echo str_replace(trim($finalDeSemana, "trinta"), "trinta", $finalDeSemana);
+echo $finalDeSemana;
+echo trim($finalDeSemana);
+
+echo "<br>";
+echo "7) ";
+$pizza = "p1,p2,p3,p4";
+$pedacos = explode(",", $pizza);
+
+// Resultado: ["p1", "p2", "p3", "p4"]
+print_r($pedacos);
+
+echo "<br>";
+echo "8) ";
+$palavras = "uau que coisa legal";
+echo implode($palavras);
 
