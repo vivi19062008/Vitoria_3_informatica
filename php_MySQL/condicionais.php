@@ -116,7 +116,7 @@ foreach ($cores as $cor){
     echo "cor: $cor<br>";
 }
 echo "==============================================================<br>";
-$nome = vitoria;
+$nome = "vitoria";
 if ($nome == "Vitoria"){
     echo "bem vindo $nome";
 
@@ -127,3 +127,7 @@ if ($nome == "Vitoria"){
     }
 
 
+?>
+
+<?php
+    
