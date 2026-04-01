@@ -115,6 +115,9 @@ var_dump(strpos($finalDeSemana, "jogo"));
 
 echo "<br>";
 echo "5) ";
+echo str_replace("jogos", "trinta", $finalDeSemana);
 
-
+echo "<br>";
+echo "6) ";
+echo str_replace(trim($finalDeSemana, "trinta"), "trinta", $finalDeSemana);
 
