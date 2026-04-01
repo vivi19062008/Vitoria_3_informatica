@@ -116,6 +116,7 @@ foreach ($cores as $cor){
     echo "cor: $cor<br>";
 }
 echo "==============================================================<br>";
+
 $nome = "vitoria";
 if ($nome == "Vitoria"){
     echo "bem vindo $nome";
@@ -124,10 +125,8 @@ if ($nome == "Vitoria"){
 
     if( $saldo_inicial >= 18000){
         echo "esse é seu saldo<br>";
-    }
+    }}
 
 
-?>
 
-<?php
-    
+

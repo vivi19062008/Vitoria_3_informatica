@@ -81,6 +81,7 @@ $cores = ["verde" , "azul" , "preto"];
 foreach ($cores as $cores) {
     echo "<br>" . $cores;
 }
+echo "<br>___________________________________________________";
 ?>
 
 <?php
@@ -91,8 +92,29 @@ function rolarDado($lados = 180) {
 // Exemplo de uso:
 echo "Dado de 6 lados: " . rolarDado() . "<br>";
 echo "Dado de 20 lados (RPG): " . rolarDado(20);
+echo "<br>___________________________________________________";
 ?>
 
+<?php
+$finalDeSemana = "em meu final de semana, eu joguei muitos jogos legais, no Minecraft eu começei a construir uma estação de trem que eu vi no you tube, esse meu mundo da estação é o mundo mais bonito que eu tenho :D, joguei tambem overcooked, um jogo de cozinha, que é bem estrassante mas muito legal !!.";
+echo "<br>";
+echo "1) ";
+echo strlen($finalDeSemana);
+
+echo "<br>";
+echo "2) ";
+echo strtoupper($finalDeSemana);
+
+echo "<br>";
+echo "3) ";
+echo strtolower($finalDeSemana);
+
+echo "<br>";
+echo "4) ";
+var_dump(strpos($finalDeSemana, "jogo"));
+
+echo "<br>";
+echo "5) ";
 
 
 
