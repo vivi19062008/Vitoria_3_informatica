@@ -132,6 +132,9 @@ print_r($pedacos);
 
 echo "<br>";
 echo "8) ";
-$palavras = "uau que coisa legal";
-echo implode($palavras);
+$palavras = ['uau', 'que', 'coisa', 'legal'];
+echo implode('', $palavras);
 
+echo "<br>";
+echo "9) ";
+echo str_word_count($finalDeSemana);
