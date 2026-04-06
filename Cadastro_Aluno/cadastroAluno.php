@@ -1,5 +1,17 @@
 <?php
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "aula_de_wordpress";
 
+$connect = mysqli_connect("localhost", "root", "", "aula_de_wordpress");
+
+if ($connect->connect_error) {
+    echo "erro ao se cadastrar : " . $connect->connect_error;
+}
+else {
+    echo "conectado com sucesso";
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -30,19 +42,6 @@
     </BODY>
 </html>
 
-<?php
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "aula_de_wordpress";
-$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
-if ($conn->connect_error) {
-    echo "erro ao se cadastrar : " . $conn->connect_error;
-}
-else {
-    echo "conectado com sucesso";
-}
-?>
 
 
