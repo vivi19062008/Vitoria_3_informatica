@@ -12,6 +12,21 @@ if ($connect->connect_error) {
 else {
     echo "conectado com sucesso";
 }
+
+@$name = $_REQUEST [ "name"];
+@$regAluno  = $_REQUEST ["regAluno"];
+@$email = $_REQUEST ["email"];
+@$phone = $_REQUEST ["cellphone"];
+
+$insert = "INSERT INTO cadastroalunos (regAluno, nome, email, celular)
+VALUES ($name, $regAluno, $email, $phone)";
+
+if (mysqli_query($connect, $insert) === TRUE) {
+    echo "inserido com sucesso";
+} else {
+    
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -41,6 +56,7 @@ else {
 
     </BODY>
 </html>
+
 
 
 
