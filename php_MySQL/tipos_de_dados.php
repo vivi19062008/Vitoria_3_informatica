@@ -138,3 +138,7 @@ echo implode('', $palavras);
 echo "<br>";
 echo "9) ";
 echo str_word_count($finalDeSemana);
+
+echo "<br>";
+echo "10) ";
+ echo ucwords($finalDeSemana);
