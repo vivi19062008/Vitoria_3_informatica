@@ -24,7 +24,7 @@ VALUES ($name, $regAluno, $email, $phone)";
 if (mysqli_query($connect, $insert) === TRUE) {
     echo "inserido com sucesso";
 } else {
-    
+
 }
 
 ?>
@@ -57,7 +57,38 @@ if (mysqli_query($connect, $insert) === TRUE) {
     </BODY>
 </html>
 
+<?php
+try {
+    $con = new msqli("localhost", "root", "", "aula_de_wordpress");
+    $con->set_charset("utf8mb4");
+
+    $sql = "INSERT INTO cadastroalunos (regAluno, nome, email, celular) VALUES ('$name', '$regAluno', '$email', '$phone')";
+    $con->query($sql);
+
+    echo "inserido com sucesso";
+}catch (mysqli_sql_exception $e){
+    echo "Erro ao inserir: " . $e->getMessage();
+}
+?>
 
 
+
+<?php
+//$nome = $_REQUEST [ "name" ];
+//$email = $_REQUEST ["email" ];
+//$celular = $_REQUEST ["celular" ];
+//$password = $_REQUEST ["password" ];
+//$type = $_REQUEST ["kind" ];
+//?>
+<!--<!DOCTYPE html>-->
+<!--</html>-->
+<!--<head>-->
+<!--    -->
+<!--</head>-->
+<!---->
+<!--<body>-->
+<!---->
+<!--</body>-->
+<!--</html>-->
 
 
