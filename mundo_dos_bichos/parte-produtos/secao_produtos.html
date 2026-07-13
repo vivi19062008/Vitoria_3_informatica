@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="style_produtos.css">
+    <link>
+</head>
+<body>
+
+<header>
+
+    <div class="header-left"></div>
+
+    <div class="logo-container">
+        <img src="img/logo.png" alt="Logo Mundo Dos Bichos">
+    </div>
+
+    <div class="header-icons">
+
+        <a href="cadastro.php" title="Cadastro">
+            <i class="fa-solid fa-user"></i>
+        </a>
+
+        <a href="carrinho.php" title="Carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+    </div>
+
+</header>
+
+<!-- MENU -->
+<nav>
+
+    <div class="nav-buttons">
+
+        <a href="index.php">Home</a>
+
+        <a href="/secao_produtos.html">Produtos</a>
+
+        <a href="atendimento.php">Atendimento</a>
+
+    </div>
+
+</nav>
+
+<section class="banner">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+
+    <h1>Produtos</h1>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/2138/2138440.png">
+
+</section>
+
+<section class="categorias">
+
+    <div class="card amarelo" onclick="abrir('Petiscos')">
+
+        <h2>Petiscos</h2>
+
+        <link>
+        <a href="https://www.petz.com.br/cachorro/petiscos" target="_blank" style="text-decoration:none;">
+            <img src="https://cdn-icons-png.flaticon.com/512/616/616430.png">
+
+    </div>
+
+    <div class="card verde" onclick="abrir('Acessórios')">
+
+        <h2>Acessórios</h2>
+        <a href="https://www.petz.com.br/cachorro/acessorios" target="_blank" style="text-decoration:none;">
+            <img src="https://cdn-icons-png.flaticon.com/512/616/616430.png">
+
+    </div>
+
+    <div class="card rosa" onclick="abrir('Vacinas')">
+
+        <h2>Vacinas</h2>
+        <a href="https://www.petz.com.br" target="_blank" style="text-decoration:none;">
+            <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+
+    </div>
+
+    <div class="card azul" onclick="abrir('Brinquedos')">
+
+        <h2>Brinquedos</h2>
+        <a href="https://www.petz.com.br/cachorro/brinquedos" target="_blank" style="text-decoration:none;">
+            <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+
+    </div>
+
+</section>
+
+<div class="botao">
+
+    <button onclick="saibaMais()">
+
+        Saiba mais
+
+    </button>
+
+</div>
+
+<script>
+
+    function abrir(categoria){
+
+        alert("Você clicou em " + categoria);
+
+    }
+
+    function saibaMais(){
+
+        alert("Aqui você pode abrir outra página com os produtos.");
+
+    }
+
+</script>
+
+
+</body>
+</html>

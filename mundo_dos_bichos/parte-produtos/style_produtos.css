@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#ffffff;
+
+}
+
+/* HEADER */
+
+header{
+    background:#b9e39a;
+    height:160px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Espaço para centralizar logo */
+
+.header-left{
+    width:120px;
+}
+
+/* LOGO */
+
+.logo-container{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo-container img{
+    height:140px;
+    width:auto;
+
+    /* Remove o fundo branco visualmente */
+    mix-blend-mode:multiply;
+}
+
+/* ÍCONES */
+
+.header-icons{
+    width:120px;
+    display:flex;
+    justify-content:flex-end;
+    gap:25px;
+}
+
+.header-icons a{
+    color:#006c8c;
+    font-size:30px;
+    transition:0.3s;
+}
+
+.header-icons a:hover{
+    color:#33b6de;
+    transform:scale(1.1);
+}
+
+/* NAVBAR */
+
+nav{
+    background:#ffdfef;
+    height:60px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:40px;
+}
+
+/* MENU */
+
+.nav-buttons{
+    display:flex;
+    gap:35px;
+}
+
+.nav-buttons a{
+    text-decoration:none;
+    border:none;
+    background:none;
+
+    color:#006c8c;
+    font-size:18px;
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.nav-buttons a:hover{
+    color:#33b6de;
+}
+
+/* BANNER */
+
+.banner{
+
+    width:80%;
+    margin:35px auto;
+
+    background:#71d7ff;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+
+}
+
+.banner img{
+    width:120px;
+}
+
+.banner h1{
+    font-size:70px;
+    color:#0b7097;
+}
+
+/* CARDS */
+
+.categorias{
+
+    width:80%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+
+}
+
+.card{
+
+    width:180px;
+    height:250px;
+
+    border-radius:20px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.amarelo{
+    background:#fff18c;
+}
+
+.verde{
+    background:#bde88a;
+}
+
+.rosa{
+    background:#ffd6ea;
+}
+
+.azul{
+    background:#74d8ff;
+}
+
+.card h2{
+
+    color:#6d6d2b;
+    font-size:30px;
+    text-align:center;
+
+}
+
+.card img{
+
+    width:110px;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+/* BOTÃO */
+
+.botao{
+
+    display:flex;
+    justify-content:center;
+
+    margin:60px;
+
+}
+
+button{
+
+    border:none;
+
+    background:#71d7ff;
+
+    color:#0b7097;
+
+    font-size:45px;
+
+    padding:18px 120px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+button:hover{
+
+    background:#53c8f4;
+
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .banner{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .banner h1{
+        font-size:50px;
+    }
+
+    .categorias{
+
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+
+    }
+
+    button{
+
+        font-size:35px;
+        padding:15px 60px;
+
+    }
+
+}

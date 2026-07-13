@@ -1,0 +1,279 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#ffffff;
+
+}
+
+/* HEADER */
+
+header{
+    background:#b9e39a;
+    height:160px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Espaço para centralizar logo */
+
+.header-left{
+    width:120px;
+}
+
+/* LOGO */
+
+.logo-container{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo-container img{
+    height:140px;
+    width:auto;
+
+    /* Remove o fundo branco visualmente */
+    mix-blend-mode:multiply;
+}
+
+/* ÍCONES */
+
+.header-icons{
+    width:120px;
+    display:flex;
+    justify-content:flex-end;
+    gap:25px;
+}
+
+.header-icons a{
+    color:#006c8c;
+    font-size:30px;
+    transition:0.3s;
+}
+
+.header-icons a:hover{
+    color:#33b6de;
+    transform:scale(1.1);
+}
+
+/* NAVBAR */
+
+nav{
+    background:#ffdfef;
+    height:60px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:40px;
+}
+
+/* MENU */
+
+.nav-buttons{
+    display:flex;
+    gap:35px;
+}
+
+.nav-buttons a{
+    text-decoration:none;
+    border:none;
+    background:none;
+
+    color:#006c8c;
+    font-size:18px;
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.nav-buttons a:hover{
+    color:#33b6de;
+}
+
+/* CONTEÚDO */
+
+.banner{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.banner h1{
+    color:#006c8c;
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.banner p{
+    color:#555;
+    font-size:20px;
+}
+/*================================CARROSSEL=======================================*/
+.carousel{
+    width:750px;
+    height:350px;
+
+    margin:50px auto; /* Centraliza horizontalmente */
+
+    overflow:hidden;
+    position:relative;
+
+    border-radius:25px;
+    border:5px solid #006c8c;
+
+    background:linear-gradient(135deg,#006c8c,#b9e39a,#FAB9DA);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.slides{
+    display:flex;
+    width:400%;
+    height:100%;
+    transition:.6s;
+}
+
+.slide{
+    width:25%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.slide h2{
+    color:#006c8c;
+    background:white;
+    padding:15px 30px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.slide p{
+    background:white;
+    padding:15px;
+    border-radius:15px;
+    font-size:20px;
+}
+
+.navigation{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.navigation label{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#006c8c;
+    border:3px solid #FAB9DA;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.navigation label:hover{
+    background:#b9e39a;
+}
+
+/* Movimentação */
+
+#slide1:checked ~ .slides{
+    margin-left:0;
+}
+
+#slide2:checked ~ .slides{
+    margin-left:-100%;
+}
+
+#slide3:checked ~ .slides{
+    margin-left:-200%;
+}
+
+#slide4:checked ~ .slides{
+    margin-left:-300%;
+}
+/* ================= CARD ANIMAIS ================= */
+
+.animais{
+    max-width:1200px;
+    margin:50px auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    padding:20px;
+}
+
+/* CARD REDONDO */
+.card-animal{
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    font-weight:bold;
+    color:#fff;
+
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+
+    cursor:pointer;
+}
+
+.card-animal:hover{
+    transform:scale(1.1);
+}
+
+/* CORES ALTERNADAS DA PALETA */
+
+.card-animal:nth-child(1){
+    background:#78dfff;
+}
+
+.card-animal:nth-child(2){
+    background:#33b6de;
+}
+
+.card-animal:nth-child(3){
+    background:#006c8c;
+}
+
+.card-animal:nth-child(4){
+    background:#b9e39a;
+    color:#006c8c;
+}
+
+.card-animal:nth-child(5){
+    background:#FAB9DA;
+    color:#006c8c;
+}
+
+.card-animal:nth-child(6){
+    background:#78dfff;
+    color:#006c8c;
+}

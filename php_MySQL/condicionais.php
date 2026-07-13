@@ -127,6 +127,9 @@ if ($nome == "Vitoria"){
         echo "esse é seu saldo<br>";
     }}
 
+?>
+
+
 
 
 
