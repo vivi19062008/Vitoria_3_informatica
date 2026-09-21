@@ -1,0 +1,306 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Baloo 2', cursive;
+    background:#ffffff;
+}
+
+/* ===========================
+   TOPO
+=========================== */
+
+.topo{
+    background:#b9e29a;
+    height:75px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+}
+
+.logo img{
+    height:60px;
+}
+
+.icones{
+    position:absolute;
+    right:40px;
+    font-size:28px;
+}
+
+.icones i{
+    margin-left:18px;
+    color:#444;
+    cursor:pointer;
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+nav{
+    background:#ffdfef;
+    height:42px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#6c4a7b;
+    font-size:22px;
+    font-weight:700;
+}
+
+nav a:hover,
+.ativo{
+    background:#f8bfd9;
+    padding:4px 14px;
+    border-radius:10px;
+}
+
+/* ===========================
+   BANNER ADOÇÃO
+=========================== */
+
+.banner-adocao{
+
+    width:1200px;
+
+    margin:45px auto;
+
+    display:grid;
+
+    grid-template-columns:520px 520px;
+
+    justify-content:center;
+
+    align-items:center;
+
+    column-gap:90px;
+
+}
+
+/* imagem */
+
+.imagem-banner{
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.imagem-banner img{
+
+    width:450px;
+
+}
+
+/* texto azul */
+
+.texto-adocao{
+
+    background:#78dfff;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    min-height:320px;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+}
+
+.texto-adocao p{
+
+    color:#36516d;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+}
+
+/* patinhas */
+
+.patinhas{
+
+    position:absolute;
+
+    right:25px;
+
+    bottom:-18px;
+
+    width:70px;
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.cards-adocao{
+
+    width:1200px;
+
+    margin:20px auto 60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+/* card */
+
+.card{
+
+    background:#ffdfef;
+
+    border-radius:30px;
+
+    padding:20px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card img{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:contain;
+
+}
+
+.card h3{
+
+    margin:15px 0;
+
+    color:#7a4b68;
+
+    font-size:28px;
+
+}
+
+.card button{
+
+    background:#f6b5d0;
+
+    color:#734564;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:10px 35px;
+
+    font-family:'Baloo 2';
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background:#ec9dc0;
+
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:1100px){
+
+    .banner-adocao{
+
+        width:95%;
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .cards-adocao{
+
+        width:95%;
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .cards-adocao{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .imagem-banner img{
+
+        width:300px;
+
+    }
+
+    .texto-adocao{
+
+        min-height:auto;
+
+    }
+
+    nav ul{
+
+        gap:15px;
+
+    }
+
+    nav a{
+
+        font-size:18px;
+
+    }
+
+}
