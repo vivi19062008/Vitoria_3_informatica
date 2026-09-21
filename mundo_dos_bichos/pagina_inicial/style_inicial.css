@@ -12,91 +12,336 @@ body{
 
 /* HEADER */
 
-header{
-    background:#b9e39a;
-    height:160px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 40px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+.header {
+    height: 100px;
+
+    background-color: #c2eda9;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    padding: 0 50px;
+
+    border-bottom: 3px solid #78dfff;
+
+    box-shadow: 0 3px 12px rgba(0, 108, 140, 0.12);
 }
 
-/* Espaço para centralizar logo */
 
-.header-left{
-    width:120px;
+/* ================================
+TEXTO DO LADO ESQUERDO
+================================ */
+
+.header-esquerdo {
+    position: absolute;
+
+    left: 50px;
+
+    color: #006c8c;
+
+    font-size: 14px;
+
+    font-weight: bold;
 }
 
-/* LOGO */
 
-.logo-container{
-    flex:1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+/* ================================
+LOGO
+================================ */
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+
+    color: #006c8c;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
 }
 
-.logo-container img{
-    height:140px;
-    width:auto;
 
-    /* Remove o fundo branco visualmente */
-    mix-blend-mode:multiply;
+.logo:hover {
+    color: #33b6de;
 }
 
-/* ÍCONES */
 
-.header-icons{
-    width:120px;
-    display:flex;
-    justify-content:flex-end;
-    gap:25px;
+.logo-icone {
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background-color: #FAB9DA;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #006c8c;
+
+    font-size: 25px;
+
+    box-shadow: 0 4px 8px rgba(0, 108, 140, 0.15);
 }
 
-.header-icons a{
-    color:#006c8c;
-    font-size:30px;
-    transition:0.3s;
+
+/* ================================
+ÁREA DIREITA
+================================ */
+
+.header-direito {
+    position: absolute;
+
+    right: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
 }
 
-.header-icons a:hover{
-    color:#33b6de;
-    transform:scale(1.1);
+
+.icone-header {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 5px;
+
+    text-decoration: none;
+
+    color: #006c8c;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
 }
 
-/* NAVBAR */
 
-nav{
-    background:#ffdfef;
-    height:60px;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    padding-right:40px;
+.icone-header i {
+    font-size: 23px;
 }
 
-/* MENU */
 
-.nav-buttons{
-    display:flex;
-    gap:35px;
+.icone-header:hover {
+    color: #33b6de;
+
+    transform: translateY(-2px);
 }
 
-.nav-buttons a{
-    text-decoration:none;
-    border:none;
-    background:none;
 
-    color:#006c8c;
-    font-size:18px;
-    font-weight:600;
+/* Carrinho */
 
-    transition:0.3s;
+.icone-header:first-child i {
+    color: #33b6de;
 }
 
-.nav-buttons a:hover{
-    color:#33b6de;
+
+/* Perfil */
+
+.perfil i {
+    color: #006c8c;
+}
+
+
+.perfil:hover i {
+    color: #FAB9DA;
+}
+
+
+/* ================================
+NAV
+================================ */
+
+.nav {
+    background-color: #006c8c;
+
+    width: 100%;
+
+    box-shadow: 0 3px 8px rgba(0, 108, 140, 0.2);
+}
+
+
+.nav-container {
+    min-height: 58px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.nav-link {
+    height: 58px;
+
+    padding: 0 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    position: relative;
+}
+
+
+.nav-link i {
+    font-size: 15px;
+}
+
+
+/* ================================
+EFEITO HOVER
+================================ */
+
+.nav-link:hover {
+    background-color: #33b6de;
+
+    color: white;
+}
+
+
+/* Linha inferior */
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 50%;
+
+    width: 0;
+
+    height: 4px;
+
+    background-color: #FAB9DA;
+
+    transition: 0.3s;
+
+    transform: translateX(-50%);
+}
+
+
+.nav-link:hover::after {
+    width: 70%;
+}
+
+
+/* ================================
+RESPONSIVIDADE
+================================ */
+
+@media (max-width: 900px) {
+
+    .header-esquerdo {
+        display: none;
+    }
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .header-direito {
+        right: 20px;
+    }
+
+    .logo span {
+        display: none;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+
+        gap: 0;
+    }
+
+    .nav-link {
+        padding: 0 12px;
+
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        height: 85px;
+    }
+
+    .header-direito {
+        gap: 15px;
+    }
+
+    .icone-header span {
+        display: none;
+    }
+
+    .icone-header i {
+        font-size: 22px;
+    }
+
+    .logo-icone {
+        width: 43px;
+
+        height: 43px;
+    }
+
+    .nav {
+        overflow-x: auto;
+    }
+
+    .nav-container {
+        width: max-content;
+
+        flex-wrap: nowrap;
+    }
+
+    .nav-link {
+        height: 50px;
+
+        padding: 0 14px;
+    }
+
 }
 
 /* CONTEÚDO */
